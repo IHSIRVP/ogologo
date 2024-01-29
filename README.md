@@ -6,7 +6,13 @@ A Souvenir.
 
 Instructions:
 
-- Run bash.sh
-  -- Creates an environment 
-  -- Change the name of the environment in the {VENV_NAME} placeholder
-  -- 
+Cloning the Repo-
+  -- Command : git clone [URL]
+  -- Open this folder{DLProject} in VSC
+  -- Open the terminal 
+  -- Creating an environment
+      -- In the VSC terminal change the path with the cwd to DLProject file - --/Users/Rishi/Desktop/DLProject--(instance)
+      -- write the {./bash.sh} command in the terminal with the updated the environment name -> Change the name of the environment in the {VENV_NAME} placeholder
+      -- Creates an environment with the required dependencies
+
+      
