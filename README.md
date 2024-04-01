@@ -1,6 +1,12 @@
-# DLProject
+# ogologo - Constrained Logo Generation
 
-Working on building a novel solution to an existing problem in incorporation of a deep learning solution developed entirely out of originality. 
+Logo design (and brand identity development at
+large) is a lengthy and cumbersome process. The
+objective of this project is to allow designers to gen-
+erate logo concepts faster through a constrained logo
+generation model, constrained over shape, colour and
+theme. This would allow designers to come up with
+multiple logo concepts quickly and easily.
 
 A Souvenir. 
 
