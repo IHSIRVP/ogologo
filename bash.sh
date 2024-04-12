@@ -11,4 +11,4 @@ pip install torchvision
 pip install torchaudio
 pip install numpy pandas matplotlib seaborn scikit-learn
 pip install scipy pillow h5py
-echo "Dependencies installed successfully."
+echo "All dependencies installed successfully."

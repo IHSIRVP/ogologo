@@ -6,3 +6,6 @@ objective of this project is to allow designers to generate logo concepts faster
 generation model, constrained over shape, colour and
 theme. This would allow designers to come up with
 multiple logo concepts quickly and easily.
+
+
+This project is co-authored by Priyanshu Singhal, Rishi Laddha, Rishi Vijaywargiya, Sanidhya Singh and Siddhant Deshpande.
