@@ -29,32 +29,7 @@ class TextImageDataset(Dataset):
         # Return the textual description and the image
         return text, image
 
-# Define a transformation to apply to the images
-image_transform = transforms.Compose([
-    transforms.Resize((256, 256)),  # Resize the image to 256x256
-    transforms.ToTensor(),          # Convert PIL Image to tensor
-    transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])  # Normalize the image
-])
 
-# Example data (replace with your own data)
-data = [
-    ("A beautiful sunset over the mountains.", "image1.jpg"),
-    ("A cute puppy playing in the grass.", "image2.jpg"),
-    # Add more samples as needed
-]
-
-# Create an instance of the custom dataset
-dataset = TextImageDataset(data, transform=image_transform)
-
-batch_size = 32
-shuffle = True  # Shuffle the data during training
-data_loader = DataLoader(dataset, batch_size=batch_size, shuffle=shuffle)
-
-for texts, images in data_loader:
-
-    print("Textual descriptions:", texts)
-    print("Image batch shape:", images.shape)
-    break  
 
 
 
