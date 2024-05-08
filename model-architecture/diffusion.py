@@ -36,3 +36,27 @@ class UNET_ResidualBlock(nn.Module):
             self.residual_layer = nn.Identity()
         else:
             self.residual_layer = nn.Conv2d(in_channels, out_channels, kernel_size=1, padding=0)
+            
+
+    def forward(self, feature, time):
+
+        residue = feature
+        feature = self.groupnorm_feature(feature)
+        feature = F.silu(feature)
+        feature = self.conv_feature(feature)
+        time = F.silu(time)
+
+        time = self.linear_time(time)
+        
+
+        merged = feature + time.unsqueeze(-1).unsqueeze(-1)
+        
+
+        merged = self.groupnorm_merged(merged)
+        
+
+        merged = F.silu(merged)
+        
+
+        merged = self.conv_merged(merged)
+        return merged + self.residual_layer(residue)
