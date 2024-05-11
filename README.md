@@ -9,3 +9,4 @@ multiple logo concepts quickly and easily.
 
 
 This project is co-authored by Priyanshu Singhal, Rishi Laddha, Rishi Vijaywargiya, Sanidhya Singh and Siddhant Deshpande.
+We referred to this repository for implementing stable diffusion  - https://github.com/hkproj/pytorch-stable-diffusion
